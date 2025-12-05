@@ -10,10 +10,18 @@
 - **MSELoss**: проверяется совпадение значения функции потерь и градиента с `nn.MSELoss(reduction="mean")`
 
 Запуск тестов (из корня проекта):
-`pytest -s tests/test_linear.py`
-`pytest -s tests/test_relu.py`
-`pytest -s tests/test_softmax.py`
-`pytest -s tests/test_mse.py`
+```python
+pytest -s tests/test_linear.py
+```
+```python
+pytest -s tests/test_relu.py
+```
+```python
+pytest -s tests/test_softmax.py
+```
+```python
+pytest -s tests/test_mse.py
+```
 
 ## Эксперименты с гиперпараметрами
 
