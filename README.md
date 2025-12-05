@@ -1,5 +1,20 @@
 # dat-mag-iad-lab-2
 
+## Тестирование корректности слоев и лосса
+
+Для каждого компонента реализованы тесты:
+
+- **Linear**: сравниваются `forward` и градиенты `dX`, `dW`, `db` с `nn.Linear`  
+- **ReLU**: проверяется, что `forward` и производная совпадают с `nn.ReLU`  
+- **Softmax**: сравниваются выходы и градиенты с `nn.Softmax(dim=1)`  
+- **MSELoss**: проверяется совпадение значения функции потерь и градиента с `nn.MSELoss(reduction="mean")`
+
+Запуск тестов (из корня проекта):
+`pytest -s tests/test_linear.py`
+`pytest -s tests/test_relu.py`
+`pytest -s tests/test_softmax.py`
+`pytest -s tests/test_mse.py`
+
 ## Эксперименты с гиперпараметрами
 
 Для оценки влияния гиперпараметров проведены эксперименты с:
