@@ -74,7 +74,7 @@ pytest -s tests/test_mse.py
 
 ![Final train/val curves](docs/final_training_curves.png)
 
-На графиках слева показан train loss, справа — validation accuracy для этого эксперимента:
+На графиках слева показан train loss, справа - validation accuracy для этого эксперимента:
 
 - **Train loss** резко падает с ≈0.053 до ≈0.013 уже за первые 5–7 эпох, после чего выходит на плато и медленно убывает к ≈0.012  
 - **Validation accuracy** стартует около 0.84, быстро растёт до ≈0.92 к 8–10‑й эпохе и затем стабилизируется на этом уровне до конца обучения
